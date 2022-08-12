@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link{
+   transition: 0.7s ease;
+}
+
+.nav-link{
+  color: blue;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  color: wheat;
+}
+
+
+/* Start gamburger shop */
+.bleck__show{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(44, 44, 44, 0.507);
+  z-index: -999;
+  transition: 0.3s linear;
+  display: none;
+}
+.bleckshow{
+  z-index: 998 !important;
+  display: block !important;
+}
+
+/* End gamburger shop */
+
+
+
+/* Start hamburger power */
+.burger__btn{
+  display: none;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo p{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #2B2B2B;
+}
+.logo img{
+  margin-right: 20px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 620px;
+}
+nav a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2B2B2B;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signup{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  width: 146px;
+  height: 55px;
+  background: #FF6600;
+  border-radius: 8px;
+  margin-left: 80px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .navbar{
+      padding: 0 30px;
+  }
+
+}
+@media (max-width: 1055px) {
+  .nav{
+      background: #858383b3;
+      position: fixed;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      right: -100%;
+      top: 0;
+      width: 300px;
+      height: 100vh;
+      transition: 0.3s linear;
+  }
+
+  .nav_show{
+      right: 0 !important;
+  }
+  nav{
+      flex-direction: column;
+      width: auto;
+  }
+  .signup{
+      margin-left: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+
+  .burger__btn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: none;
+      outline: none;
+      border: none;
+  }
+  .burger__btn span{
+      display: block;
+      width: 29px;
+      height: 4px;
+      background: #5B5B5B;
+      margin: 3px 0;
+      position: relative;
+      transition: 0.3s linear;
+  }
+  .burger__btn span:nth-child(2)::after{
+      content: "";
+      width: 4px;
+      height: 4px;
+      background: #FF6600;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  /* .burger__btn span:nth-child(2)::before{
+      content: "";
+      width: 2px;
+      height: 4px;
+      background: #FFFFFF;
+      position: absolute;
+      top: 0;
+      left: 4px;
+  } */
+  .burger__close{
+      z-index: 1;
+  }
+  .burger__close span:nth-child(1){
+      transform: translateY(10px) rotate(45deg);
+  }
+  .burger__close span:nth-child(2){
+      opacity: 0;
+  }
+  .burger__close span:nth-child(3){
+      transform: translateY(-10px) rotate(-45deg);
+  }
+  header{
+      padding: 200px 0 0 30px;
+  }
+  .header_btn a{
+      width: 180px;
+  }
+}

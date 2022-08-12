@@ -1,0 +1,15 @@
+.mySwiperr {
+    gap: 10px;
+}
+
+.Swipperdiv {
+    gap: 10px;
+    width: 500px;
+    height: 500px;
+    /* gap: 50px; */
+    display: flex;
+}
+
+.Swipperdiv img {
+    /* object-fit: contain; */
+}
